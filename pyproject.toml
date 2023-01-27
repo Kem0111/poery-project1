@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "poery-project1"
+version = "0.1.0"
+description = ""
+authors = ["kem <diyeqo@icloud.com>"]
+readme = "README.md"
+packages = [{include = "poery_project1"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+colorama = "^0.4.6"
+
+[tool.poetry.scripts]
+say-hello = "poery_project1.scripts.say_hello:main"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
